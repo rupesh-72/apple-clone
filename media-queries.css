@@ -1,0 +1,279 @@
+/* ================== Navbar Starts ================= */
+
+@media (max-width: 1200px) {
+    .nav-links{
+        gap: 2.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 834px) {
+    .menu-list{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .logo{
+        position: absolute;
+        left: 3%;
+    }
+
+    .right-menu{
+        position: absolute;
+        right: 3%;
+        gap: 2.5rem;
+    }
+}
+
+/* ================== Navbar Ends ================= */
+
+/* ================== Bank offers Starts ================= */
+
+@media (max-width: 834px) {
+    .bank-offers{
+        text-align: center;
+    }
+}
+
+/* ================== Bank offers Ends ================= */
+
+/* ================== Hero Content Starts ================= */
+
+@media (max-width: 1200px){
+    .hero-image {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 834px){
+    .hero-image {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 735px){
+    .hero-image {
+        background-image: url('./assets/images/hero-image-wrap.webp');
+    }
+}
+
+/* ================== Hero Content Ends ================= */
+
+/* ================== Hero Content Below Starts ================= */
+
+@media (max-width: 1200px){
+    .hero-below {
+        background-image: url('./assets/images/hero-below-wrap.webp');
+        height: 80vh;
+    }
+}
+
+@media (max-width: 834px){
+    .hero-below {
+        height: 60vh;
+    }
+}
+
+/* ================== Hero Content Below Ends ================= */
+
+/* ================== Video Content Starts ================= */
+
+@media (max-width: 945px){
+    .iwatch-content img{
+        width: 160px;
+        height: 60px;
+    }
+
+    .iwatch-content h2{
+        font-size: 1.8rem;
+    }
+
+    .learn-btn{
+        width: 10rem;
+        height: 3.7rem;
+        font-size: 1.5rem;
+    }
+
+    .buy-btn{
+        width: 7rem;
+        height: 3.7rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 735px){
+    .iwatch-content{
+        top: 50%;
+    }
+
+    .iwatch-content img{
+        width: 130px;
+        height: 50px;
+    }
+
+    .iwatch-content h2{
+        font-size: 1.5rem;
+    }
+
+    .learn-btn{
+        width: 8rem;
+        height: 3.2rem;
+        font-size: 1.2rem;
+    }
+
+    .buy-btn{
+        width: 5rem;
+        height: 3.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 465px){
+    .iwatch-content{
+        top: 50%;
+    }
+
+    .iwatch-content img{
+        width: 100px;
+        height: 40px;
+    }
+
+    .iwatch-content h2{
+        font-size: 1rem;
+    }
+
+    .learn-btn{
+        width: 7rem;
+        height: 2.2rem;
+        font-size: 1rem;
+    }
+
+    .buy-btn{
+        width: 4rem;
+        height: 2.2rem;
+        font-size: 1rem;
+    }
+}
+
+/* ================== Video Content Ends ================= */
+
+/* ================== Grid Starts ================= */
+
+@media (max-width: 735px){
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 0;
+        gap: 0;
+    }
+}
+
+/* ================== Grid Starts ================= */
+
+/* ================== Apple Tv Starts ================= */
+
+@media (max-width: 735px) {
+    .below-content{
+        font-size: 1.2rem;
+    }
+
+    .below-content button{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 465px) {
+    .below-content{
+        font-size: 1rem;
+        gap: 3rem;
+    }
+
+    .below-content button{
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* ================== Apple Tv Ends ================= */
+
+/* ========================= Description starts ========================= */
+
+@media (max-width: 1200px) {
+    .description p{
+        padding: 0 4rem;
+    }
+
+    .description .para1{
+        padding-top: 2rem;
+    }
+
+    .description hr{
+        margin: 0 4rem;
+    }
+}
+
+@media (max-width: 735px) {
+    .description p{
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+
+    .description .para1{
+        padding-top: 2rem;
+    }
+
+    .description hr{
+        margin: 0 2rem;
+    }
+}
+
+/* ========================= Description Ends ========================= */
+
+/* ========================= Footer starts ========================= */
+
+@media (max-width: 1200px){
+    .footer-grid{
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 1200px){
+    .locate p{
+        padding: 0 0;
+    }
+
+    .locate hr{
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 1200px){
+    .locate{
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 1200px){
+    .copyright{
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 834px){
+    .footer-below{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .policies-list ul li:nth-child(1){
+        margin-left: 4rem;
+    }
+}
+
+/* ========================= Footer Ends ========================= */
+

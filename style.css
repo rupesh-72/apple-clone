@@ -1,0 +1,454 @@
+@font-face{
+    src: url(./assets/SF-Pro-Text-Regular.otf);
+    font-family: 'apple';
+}
+
+@font-face{
+    src: url(./assets/SF-Pro-Text-Thin.otf);
+    font-family: 'apple-thin';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navbar-text: #aaaaaa;
+    --navbar-background: #131212c1;
+    --link-color: #0167CC;
+    --black-text: black;
+    --white-text: #FFF;
+    --footer-color: #313131a9;
+    --footer-para-link: #141414db;
+    --white: #FFF;
+    --bank-offers-background: #000000e4;
+}
+
+html {
+    font-size: 62.5%;   /* Now 1rem = 10px */
+    font-family: 'apple';
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ================== Navbar Starts ================= */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar{
+    position: relative;
+    width: auto;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--navbar-background);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.nav-links a{
+    color: var(--navbar-text);
+}
+
+.right-menu{
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu{
+    display: none;
+}
+
+/* ================== Navbar Ends ================= */
+
+
+/* ================== Bank offers Starts ================= */
+
+.bank-offers{
+    width: 100%;
+    height: 9rem;
+    font-size: 1.3rem;
+    padding-top: 4rem;
+    background-color: var(--bank-offers-background);
+    color: var(--white-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bank-offers a{
+    color: var(--link-color);
+}
+
+/* ================== Bank offers Ends ================= */
+
+
+/* ================== Hero Content Starts ================= */
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/images/hero-image.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-text);
+    padding: 5rem 0;
+}
+
+.hero-text h2{
+    font-size: 5rem;
+}
+
+.hero-text h3{
+    font-family: 'apple-thin';
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+.hero-text-link{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 4.5rem;
+}
+
+.hero-text-link .learn, .buy{
+    color: var(--link-color);
+}
+
+.hero-text-link .learn:hover{
+    text-decoration: underline;
+}
+
+.hero-text-link .buy:hover{
+    text-decoration: underline;
+}
+
+/* ================== Hero Content Ends ================= */
+
+
+/* ========================= Hero Content Below Starts ========================= */
+
+.hero-below{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/images/hero-below.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.below{
+    color: black;
+}
+
+/* ========================= Hero Content Below Ends ========================= */
+
+
+/* ========================= Empty div Starts ========================= */
+
+.empty{
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--white);
+}
+
+/* ========================= Empty div Ends ========================= */
+
+
+/* ========================= Video section Starts ========================= */
+
+.iwatch-video{
+    width: 100%;
+    position: relative;
+    padding-top: 56.4%;
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.iwatch-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iwatch-content h2{
+    font-size: 2.5rem;
+    font-family: 'apple-thin';
+    color: var(--white-text);
+    line-height: 3;
+}
+
+.learn-btn{
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.buy-btn{
+    margin-left: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* ========================= Video section Ends ========================= */
+
+/* ========================= Grid Starts ========================= */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--white);
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.grid-item {
+    width: 100%;
+    height: 57rem;
+    background-size: cover;
+    background-position: center; 
+}
+
+.first{
+    background-image: url('./assets/images/watch.webp');
+}
+
+.second{
+    background-image: url('./assets/images/macbook.webp');
+}
+
+.third{
+    background-image: url('./assets/images/ipad.webp');
+}
+
+.fourth{
+    background-image: url('./assets/images/new-watch.webp');
+}
+
+.fifth{
+    background-image: url('./assets/images/airpods.webp');
+}
+
+.sixth{
+    background-image: url('./assets/images/trade-in.webp');
+}
+
+.first-grid, .second-grid, .third-grid, .fourth-grid, .fifth-grid, .sixth-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.first-grid h3, .second-grid h3, .third-grid h3, .sixth-grid h3{
+    color: var(--black-text);
+    font-size: 2rem;
+    line-height: 4rem;
+    font-family: 'apple-thin';
+}
+
+.second-grid h2, .third-grid h2, .fifth-grid h2{
+    color: var(--black-text);
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.fourth-grid h3, .fifth-grid h3{
+    color: var(--white-text);
+    font-size: 2rem;
+    line-height: 4rem;
+    font-family: 'apple-thin';
+}
+
+.fifth-grid h2{
+    color: var(--white-text);
+}
+
+/* ========================= Grid Ends ========================= */
+
+/* ========================= Apple TV Starts ========================= */
+
+.apple-tv{
+    position: relative;
+    z-index: -1;
+}
+
+.apple-tv img{
+    width: 100%;
+    height: auto;
+}
+
+.below-content{
+    position: absolute;
+    bottom: 9.2%;
+    display: flex;
+    align-items: center;
+    color: var(--white-text);
+    gap: 5rem;
+    font-size: 1.7rem;
+    padding-left: 3.5rem;
+}
+
+.below-content button{
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    width: 14rem;
+    height: 4.4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* ========================= Apple TV Ends ========================= */
+
+/* ========================= Description starts ========================= */
+
+.description p{
+    padding: 0 13rem;
+    color: var(--footer-color);
+    font-size: 1.2rem;
+}
+
+.description .para1{
+    padding-top: 3rem;
+}
+
+.description a{
+    color: var(--footer-para-link);
+    text-decoration: underline;
+}
+
+.description hr{
+    margin: 1.5rem 13rem;
+}
+
+/* ========================= Description Ends ========================= */
+
+/* ========================= Footer Starts ========================= */
+
+.footer-grid{
+    display: grid;
+    padding: 1rem 13rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-items h3{
+    line-height: 2.5rem;
+}
+
+.footer-items a,
+.policies-list a{
+    color: var(--footer-color);
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.footer-items a:hover{
+    text-decoration: underline;
+}
+
+.locate p,
+.copyright{
+    font-size: 1.2rem;
+    padding-left: 13rem;
+    color: var(--footer-color);
+}
+
+.locate a{
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.locate hr{
+    margin: 1rem 13rem;
+}
+
+.footer-below {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.policies-list ul{
+    display: flex;
+    align-items: center;
+}
+
+.policies-list ul li:nth-child(1){
+    margin-left: 3rem;
+}
+
+.country{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.country a{
+    font-size: 1.2rem;
+    color: var(--footer-color);
+}
+
+.policies:hover,
+.country:hover{
+    text-decoration: underline;
+}
+
+/* ========================= Footer Ends ========================= */
