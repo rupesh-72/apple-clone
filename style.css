@@ -17,6 +17,7 @@
 :root{
     --navbar-text: #aaaaaa;
     --navbar-background: #131212c1;
+    --dropdown-background: #131212;
     --link-color: #0167CC;
     --black-text: black;
     --white-text: #FFF;
@@ -57,7 +58,6 @@ header{
     justify-content: space-around;
     background-color: var(--navbar-background);
     backdrop-filter: blur(20px);
-    overflow: hidden;
 }
 
 .nav-links{
@@ -82,6 +82,63 @@ header{
 .menu{
     display: none;
 }
+
+/* ================== Dropdown Starts ================= */
+
+.store-container{
+    background-color: var(--dropdown-background);
+    width: 100%;
+    height: 0rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    /* margin-top: 4rem; */
+    visibility: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.store-items ul{
+    margin-top: 2rem;
+    padding-left: 7rem;
+}
+
+.store-items h3{
+    color: var(--navbar-text);
+    font-family: 'apple-thin';
+    font-size: 1.1rem;
+    padding: 3rem 0 1rem 0;
+}
+
+.store-items a{
+    color: white;
+}
+
+.shop h3{
+    padding-left: 6rem;
+}
+
+.shop ul li{
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 3.8rem;
+    padding-left: 6rem;
+}
+
+.quick-links ul li,
+.special ul li{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.store-dropdown:hover .store-container{
+    visibility: visible;
+    height: 40rem;
+}
+
+/* ================== Dropdown Ends ================= */
+
 
 /* ================== Navbar Ends ================= */
 
@@ -215,6 +272,7 @@ header{
     top: 60%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1;
 }
 
 .iwatch-content h2{
